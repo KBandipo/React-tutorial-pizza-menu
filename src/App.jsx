@@ -48,12 +48,20 @@ function App() {
   return (
     <div>
       <Pizza />
+      <Pizza />
+      <Pizza />
     </div>
   );
 }
 
 function Pizza() {
-  return <h1>Jesus is Lord even now</h1>;
+  return (
+    <div>
+      <img src="pizzas/spinaci.jpg" alt="Pizza spinaci" />
+      <h1>Pizza Spinaci</h1>
+      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+    </div>
+  );
 }
 
 export default App;
