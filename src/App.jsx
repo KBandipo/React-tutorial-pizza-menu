@@ -117,16 +117,18 @@ function Menu() {
 
 // Pizza
 function Pizza({ pizzaObj }) {
-  console.log(pizzaObj);
+  // console.log(pizzaObj);
+  const { name, photoName, ingredients, price, soldOut } = pizzaObj;
+
   // if (pizzaObj.soldOut) return <p>SOLD OUT</p>;
   return (
-    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
-      <img src={pizzaObj.photoName} alt={pizzaObj.photoName} />
+    <li className={`pizza ${soldOut ? "sold-out" : ""}`}>
+      <img src={photoName} alt={photoName} />
 
       <div>
-        <h3>{pizzaObj.name}</h3>
-        <p>{pizzaObj.ingredients}</p>
-        <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
+        <h3>{name}</h3>
+        <p>{ingredients}</p>
+        <span>{soldOut ? "SOLD OUT" : price}</span>
       </div>
     </li>
   );
