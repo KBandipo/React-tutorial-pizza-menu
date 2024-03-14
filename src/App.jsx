@@ -102,6 +102,7 @@ function Menu() {
             oven, all organic, all delicious.
           </p>
           <ul className="pizzas">
+            {/*Render the pizza list  */}
             {/* {pizzas.map((pizza) => (
           <Pizza
             name={pizza.name}
