@@ -109,6 +109,7 @@ function Menu() {
             photoName={pizza.photoName}
             ingredients={pizza.ingredients}
             price={pizza.price}
+            key={pizza.Name}
           />
         ))} */}
             {pizzas.map((pizza) => (
